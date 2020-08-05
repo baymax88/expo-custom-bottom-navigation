@@ -66,19 +66,6 @@ const ProfileScreen = ({ navigation }) => {
   )
 }
 
-const RealProfileScreen = ({ navigation }) => {
-  return (
-    <ProfileStack.Navigator>
-      <ProfileStack.Screen name="Profile" component={Profile} options={{
-        gestureDirection: 'vertical',
-        headerLeft: () => (
-          <Icon.Button name="ios-arrow-back" size={25} color="#00438b" backgroundColor="#fff" onPress={() => navigation.navigate('Home')} />
-        )
-      }} />
-    </ProfileStack.Navigator>
-  )
-}
-
 // bottom tab navigator
 const Tab = createMaterialBottomTabNavigator()
 
